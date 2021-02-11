@@ -1,0 +1,21 @@
+// This file is a partial
+
+// Variable
+$color1: #4cbb17;
+
+// Mixin
+@mixin flex ($position) {
+  display: flex;
+  justify-content: $position;
+  align-items: $position;
+}
+
+@mixin colors {
+    color: blue;
+    border: 3px solid purple;
+  }
+  //Extendable class (AKA Interitance)
+  %colors {
+      color: blue;
+      border: 3px solid purple;
+  }
